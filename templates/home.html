@@ -1,0 +1,20 @@
+{% extends "layout.html" %} <!-- Extends the layout.html template -->
+
+{% block content %} <!-- Block content -->
+<div class="container my-5">
+    <div class="bg-dark text-white p-5 rounded"
+        style="background: rgba(0, 0, 0, 0.7); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">
+        <h1 class="display-4">Welcome to My Python Test Page</h1>
+        <p class="lead">Exploring web development with Python and Bootstrap.</p>
+        <hr class="my-4">
+        <p>Join me on this journey as I test and experiment with various Python features.</p>
+        <a class="btn btn-light btn-lg" href="#" role="button">Learn More</a>
+    </div>
+
+    <!-- Add Logo Below Hero -->
+    <div class="text-center mt-5">
+        <img src="{{ url_for('static', filename='pylogo1.png') }}" alt="Python Logo" class="img-fluid"
+            style="width: 150px;">
+    </div>
+</div>
+{% endblock %} <!-- End block content -->

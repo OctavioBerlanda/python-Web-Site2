@@ -1,0 +1,93 @@
+body {
+    background: #373B44;
+        /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);
+        /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #4286f4, #373B44);
+            background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+.container .bg-dark {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container .bg-dark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.btn-light {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    color: #fff;
+}
+
+.btn-light:hover {
+    background: linear-gradient(to right, #feb47b, #ff7e5f);
+    color: #fff;
+}
+h1.display-4 {
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+
+p.lead {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bg-dark {
+    animation: fadeInUp 1s ease-out;
+}
+@media (max-width: 576px) {
+    .container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* Animación de rotación para el logo de Python */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.img-fluid {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.img-fluid {
+    transition: filter 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+    filter: hue-rotate(90deg);
+}
